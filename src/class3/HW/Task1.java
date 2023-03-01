@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Task1 {
     public static void main(String[] args) {
+
     /*
     HW
     use xpath to complete this
@@ -18,7 +19,6 @@ public class Task1 {
     click on the button get total
     also please print the value of the attribute type of the button GET TOTAL
     */
-
 
         System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
 
@@ -47,8 +47,6 @@ public class Task1 {
         driver.findElement(By.xpath("//button[@onclick='return total()']")).click();
 
         System.out.println(getTotal.getAttribute("type"));
-
-
 
     }
 }
