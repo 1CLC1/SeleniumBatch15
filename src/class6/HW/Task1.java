@@ -9,6 +9,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Task1 {
     public static void main(String[] args) {
+        /*
+        HW
+        1.Open the Chrome browser and navigate to https://the-internet.herokuapp.com/dynamic_loading/1
+        2.Click on the "Start" button to initiate the loading of a hidden element
+        3.Without using Thread.sleep(), write a code that waits for the hidden element to appear using Implicit Wait
+        4.Click the "Finish" button to reveal the hidden element
+        5.Verify that the text "Hello World!" is now displayed on the page
+        */
 
         System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
 
@@ -31,6 +39,6 @@ public class Task1 {
         WebElement text = driver.findElement(By.xpath("//h4[text()='Hello World!']"));
 
         System.out.println("Verified hidden text is: "+text.getText());
-        
+
     }
 }
